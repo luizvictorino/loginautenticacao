@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" -d  "{\"cantor\":\"Deive\",\"estrelas\":5,\"faixa\":\"Alex foi lembrado \"}" https://etec24-3dc8c-default-rtdb.firebaseio.com/musicas.json
