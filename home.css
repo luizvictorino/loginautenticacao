@@ -1,0 +1,52 @@
+body {
+    background-color: #ffffff; /* Branco */
+    color: #000000; /* Preto para o texto */
+    font-family: Arial, sans-serif; /* Definindo uma fonte padrão */
+}
+
+h1 {
+    color: #0000ff; /* Azul */
+    text-align: center;
+}
+
+#dados {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#foto {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #0000ff; /* Azul */
+    color: #ffffff; /* Branco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366; /* Tom mais escuro de Azul */
+}
+
+.table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #0000ff; /* Azul */
+}
+
+.table th {
+    background-color: #0000ff; /* Azul */
+    color: #ffffff; /* Branco */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cinza claro para listras */
+}
