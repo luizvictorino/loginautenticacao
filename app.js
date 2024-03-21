@@ -5,8 +5,7 @@
 // controle de sessão.
 auth.onAuthStateChanged(firebaseUser => {
     if(firebaseUser){
-
-        window.location.pathname="loginautenticacao/home.html"
+        window.location.pathname="/loginautenticacao/home.html"
     }
     else {
         dados.style.display = "none"
