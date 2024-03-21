@@ -16,6 +16,9 @@ body {
 
 h3 {
     color: #0000ff; /* Azul */
+    text-align: center;
+    font-size: 25px:
+    padding: 10px 0;
 }
 
 h4 {
