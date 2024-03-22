@@ -1,4 +1,4 @@
-// let dados = document.querySelector("#dados")
+let dados = document.querySelector("#dados")
 // let perfil = document.querySelector("#perfil")
 // let foto = document.querySelector("#foto")
 

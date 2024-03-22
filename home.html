@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,55 @@
 
     <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
-    <h1>Lista músicas Etec</h1>
-    <div id="dados">
-        <p id="perfil"></p>
-        <p id="foto"></p>
+    <main>
+        <h1>Lista músicas Etec</h1>
+        <div id="dados">
+            <p id="perfil"></p>
+            <p id="foto"></p>
 
-        <button type="button" id="btnSair">Sair</button>
+            <button type="button" id="btnSair">Sair</button>
+            <button type="button" class="activeAddMudModal"> Add + </button>
+        </div>
+
+        <table class="table" id="listaMusicas">
+            <thead>
+                <tr>
+                    <th>Faixa</th>
+                    <th>Artista</th>
+                    <th>Estrelas</th>
+                    <th>Albúm</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <div class="modal addMusModal ">
+        <form>
+            <div class="form-item">
+                <label for="faixa">Nome da Faixa</label>
+                <input type="text" name="faixa" id="faixa" placeholder="Digite a Faixa" />
+            </div>
+            <div class="form-item">
+                <label for="artista">Artista</label>
+                <input type="text" name="artista" id="artista" />
+            </div>
+            <div class="form-item">
+                <label for="estrelas">Estrelas</label>
+                <input type="range" name="estrelas" id="estrelas" class="user-point" min="0" max="5" step="1" />
+            </div>
+            <div class="form-item">
+                <label for="album">Album</label>
+                <input type="text" name="album" id="album" />
+            </div>
+
+            <input type="submit" value="Criar" id="createMus" class="modal-btn" />
+            <input type="button" value="Cancelar" id="closeAddMusModal" class="modal-btn" />
+        </form>
     </div>
-
-    <table class="table" id="listaMusicas">
-        <thead>
-            <tr>
-                <th>Faixa</th>
-                <th>Artista</th>
-                <th>Estrelas</th>
-                <th>Albúm</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
 
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
@@ -34,4 +64,5 @@
     <script src="session.js"></script>
     <script src="lista.js"></script>
 </body>
+
 </html>
