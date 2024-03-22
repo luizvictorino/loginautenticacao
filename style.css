@@ -6,6 +6,10 @@
 body {
     background-color: #ffffff; /* Branco */
     color: #000000; /* Preto para o texto */
+    background-image: url('img-home.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
@@ -15,24 +19,24 @@ body {
 }
 
 h3 {
-    color: #0000ff; /* Azul */
+    color: #ffffff; /* Azul */
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     padding: 10px;
 }
 
 h4 {
     font-size: 25px;
-    color: #003366;
+    color: #efe9e9;
     font-weight: 900;
 }
 
 .login, .novo {
-    background-color: #ffffff; /* Branco */
+    background-color: rgba(245); /* Branco */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(249, 244, 244, 1000);
 }
 
 input[type="email"],

@@ -2,6 +2,10 @@ body {
     background-color: #ffffff; /* Branco */
     color: #000000; /* Preto para o texto */
     font-family: Arial, sans-serif; /* Definindo uma fonte padrão */
+    background-image: url('img2-home.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 h1 {
