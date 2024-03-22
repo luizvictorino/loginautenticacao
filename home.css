@@ -2,11 +2,7 @@ body {
     background-color: #ffffff; /* Branco */
     color: #000000; /* Preto para o texto */
     font-family: Arial, sans-serif; /* Definindo uma fonte padrão */
-    background-image: url('img2-home.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
+
 
 h1 {
     color: #0000ff; /* Azul */
@@ -48,10 +44,10 @@ button:hover {
 }
 
 .table th {
-    background-color: #0000ff; /* Azul */
+/*     background-color: #0000ff; /* Azul */ */
     color: #ffffff; /* Branco */
 }
 
-.table tbody tr {
+.table tbody tr:nth-child(even) {
     background-color: #f2f2f2; /* Cinza claro para listras */
 }
